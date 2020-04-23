@@ -20,7 +20,7 @@ conn.commit()
 
 print("Table created successfully")
 
-postgres_insert_query = """ INSERT INTO mobile (ID, JOUR) VALUES (%s,%s)"""
+postgres_insert_query = """ INSERT INTO TEST_TO (ID, JOUR) VALUES (%s,%s)"""
 record_to_insert = (5, 'One Plus 6')
 cur.execute(postgres_insert_query, record_to_insert)
 
